@@ -67,3 +67,9 @@ input {
 .navigation .nav-pills {
   text-align: right;
 }
+td{
+  border: 2px solid black;
+    padding: 4px;
+    width: 43%;
+    text-align: center;
+}
