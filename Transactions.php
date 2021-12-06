@@ -1,29 +1,14 @@
-<?php
-
-  $username = "root";
-  $server = "localhost";
-  $password = "";
-
-  $con = mysqli_connect($server,$username, $password);
-
-  if(!$con){
-        die("connection to this database failed due to" . mysqli_connect_error());
-    }
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Management</title>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
+    <h1>Done</h1> 
     <nav class="navbar">
       <a class="navbar-brand" href="#"> HOTEL MANAGEMENT</a>
       <ul class="list-non-bullet nav-pills">
@@ -43,7 +28,7 @@
     </nav>
     <div class="container">
       <form action="index.php">
-        <h1><b>Book Room</b></h1>
+        <h1><b>Adding Customer</b></h1>
         <input type="text" placeholder="Enter your name " />
         <input type="date" name="date" id="date" placeholder="Enter your D.O.B.">
         <input type="text" placeholder="Enter your address" />
@@ -58,5 +43,5 @@
         <button class="btn">Submit</button>
       </form>
     </div>
-  </body>
+</body>
 </html>
