@@ -46,7 +46,8 @@
         </li>
       </ul>
     </nav>
-
+    <div class="container2">
+    <h1><b> Rooms</b></h1>
     <table>
       <tr>
     <th>Room Number</th>
@@ -63,5 +64,6 @@
       }
       ?>
     </table>
+    </div>
 </body>
 </html>

@@ -90,3 +90,24 @@ a {
 textarea{
   height: 44px;
 }
+h1{
+  text-align: center;
+  font-size: 49px;
+}
+table{
+  margin: auto;
+}
+th{
+  width: 33%;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 7px;
+}
+td{
+  width: 33%;
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 7px;
+  text-align: center;
+  background-color: bisque;
+}
