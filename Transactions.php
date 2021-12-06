@@ -18,10 +18,10 @@
           <a class="link" href="./AddCustomer.php">Add Customer</a>
         </li>
         <li class="list-item-inline">
-          <a class="link link-active" href="./Rooms.php">Rooms</a>
+          <a class="link " href="./Rooms.php">Rooms</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="./Transactions.php">Reservations</a>
+          <a class="link link-active" href="./Transactions.php">Reservations</a>
         </li>
       </ul>
     </nav>
