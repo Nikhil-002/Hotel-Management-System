@@ -6,17 +6,24 @@
   background-color: rgb(172, 213, 231);
   text-align: left;
   padding: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 a {
   text-decoration: none;
   color: brown;
 }
 .navbar-brand {
-  display: inline-block;
-  margin: auto;
+  display: inline;
   font-size: 34px;
   line-height: inherit;
   white-space: nowrap;
+}
+.list-non-bullet.nav-pills {
+  text-align: right;
+  float: right;
+  display: inline;
 }
 .container {
   background-color: bisque;
@@ -56,4 +63,7 @@ input {
   font-weight: 900;
   color: var(--contrast-color);
   font-size: 1.01rem;
+}
+.navigation .nav-pills {
+  text-align: right;
 }
