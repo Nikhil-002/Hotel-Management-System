@@ -86,3 +86,6 @@ a {
   border-radius: 14px;
   cursor: pointer;
 }
+textarea{
+  height: 44px;
+}
