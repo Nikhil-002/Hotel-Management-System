@@ -47,7 +47,7 @@
         <input type="int" placeholder="Enter Customer-Id " />
         <input type="int" placeholder="Enter Reception-Id" />
         <select class="dropdown" aria-label="Transaction Mode">
-          <option selected>Number of Rooms:</option>
+          <option selected>Transaction Mode</option>
           <option value="Net Banking">Net Banking</option>
           <option value="Credit Card">Credit Card</option>
           <option value="Debit Card">Debit Card</option>
