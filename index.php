@@ -27,13 +27,13 @@
           <a class="link link-active" href="/">Book Room</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="/projects.html">Add Customer</a>
+          <a class="link" href="/AddCustomer.html">Add Customer</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="/blogs.html">Rooms</a>
+          <a class="link" href="/Rooms.html">Rooms</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="/blogs.html">Reservations</a>
+          <a class="link" href="/Transactions.html">Reservations</a>
         </li>
       </ul>
     </nav>
