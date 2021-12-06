@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Done</h1> 
     <nav class="navbar">
       <a class="navbar-brand" href="#"> HOTEL MANAGEMENT</a>
       <ul class="list-non-bullet nav-pills">
