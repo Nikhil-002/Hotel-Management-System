@@ -2,6 +2,23 @@
   margin: 0%;
   padding: 0%;
 }
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input,
+textarea {
+  display: block;
+  border: 2px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  width: 80%;
+  margin: 11px 0px;
+  padding: 7px;
+}
 .navbar {
   background-color: rgb(172, 213, 231);
   text-align: left;
@@ -32,15 +49,7 @@ a {
   width: 44%;
   padding-bottom: 14px;
 }
-input {
-  width: 60%;
-  margin: 12px auto;
-  display: flex;
-  padding: 4px;
-  border: 2px solid gray;
-  border-radius: 6px;
-  font-size: 14px;
-}
+
 .dropdown {
   padding: 7px;
   width: 62%;
@@ -67,9 +76,13 @@ input {
 .navigation .nav-pills {
   text-align: right;
 }
-td{
-  border: 2px solid black;
-    padding: 4px;
-    width: 43%;
-    text-align: center;
+
+.btn {
+  color: white;
+  background: purple;
+  padding: 8px 12px;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 14px;
+  cursor: pointer;
 }
