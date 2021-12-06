@@ -1,3 +1,36 @@
+<?php
+$showTable = false;
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "hotel_management";
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if(isset($_GET['cust_id'])){
+  
+
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+  $cust_id = $_GET['cust_id'];
+  $sql = "SELECT * FROM `transactions` WHERE cust_id = '$cust_id';";
+  $result = $conn->query($sql);
+
+  if($conn->query($sql)){
+    $showTable = true;
+  }else{
+        echo "ERROR: $sql <br> $con->error";
+    }
+
+
+  $conn->close();
+}
+
+  
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,11 +59,31 @@
       </ul>
     </nav>
     <div class="container">
-      <form action="index.php">
+      <form action="Transactions.php" method="get">
         <h1><b>Show Reservation</b></h1>
-        <input type="text" placeholder="Enter Customer-Id " />
+        <input id="cust_id" namee="cust_id" type="text" placeholder="Enter Customer-Id " />
         <button class="btn">Submit</button>
       </form>
+      <table>
+      <tr>
+    <th>Transaction Id</th>
+    <th>Transaction Type</th>
+    <th>Reservation Date</th>
+    <th>Amount Paid</th>
+  </tr>
+      <?php
+      if($showTable = true){
+       if($result->num_rows>0){
+         while($row = $result->fetch_assoc() ){
+          echo "<tr>" . "<td>".$row['trans_id']."<td>".$row['trans_type']."</td>" . "<td>".$row['tarns_date']."</td>" . "<td>".$row['trans_amount']."</td>" . "</tr>";
+        }
+      }else{
+        echo "<tr>"."No data to be displayed"."</tr>";
+      }
+        }
+      
+      ?>
+    </table>
     </div>
 </body>
 </html>
