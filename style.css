@@ -51,10 +51,11 @@ a {
 }
 
 .dropdown {
-  padding: 7px;
-  width: 62%;
-  border: 2px solid grey;
-  border-radius: 7px;
+  width: 83%;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 15px;
 }
 .link {
   text-decoration: none;
