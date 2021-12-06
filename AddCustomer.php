@@ -29,17 +29,10 @@
     <div class="container">
       <form action="index.php">
         <h1><b>Adding Customer</b></h1>
-        <input type="text" placeholder="Enter your name " />
+        <input type="text" placeholder="First Name " />
+        <input type="text" placeholder="Last Name" />
         <input type="date" name="date" id="date" placeholder="Enter your D.O.B.">
-        <input type="text" placeholder="Enter your address" />
-        <select class="dropdown" aria-label="Select:">
-          <option selected>Number of Rooms:</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        <input type="phone" placeholder="Enter your Phone no." />
-        <input type="email" placeholder="enter your E-mail" />
+        <input type="phone" placeholder="Enter Phone no." />
         <button class="btn">Submit</button>
       </form>
     </div>
