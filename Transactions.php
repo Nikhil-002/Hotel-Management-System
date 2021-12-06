@@ -12,13 +12,13 @@
       <a class="navbar-brand" href="#"> HOTEL MANAGEMENT</a>
       <ul class="list-non-bullet nav-pills">
         <li class="list-item-inline">
-          <a class="link link-active" href="./">Book Room</a>
+          <a class="link " href="./">Book Room</a>
         </li>
         <li class="list-item-inline">
           <a class="link" href="./AddCustomer.php">Add Customer</a>
         </li>
         <li class="list-item-inline">
-          <a class="link" href="./Rooms.php">Rooms</a>
+          <a class="link link-active" href="./Rooms.php">Rooms</a>
         </li>
         <li class="list-item-inline">
           <a class="link" href="./Transactions.php">Reservations</a>
