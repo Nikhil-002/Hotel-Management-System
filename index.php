@@ -31,7 +31,7 @@ if(isset($_POST['cust_id'])){
 
         // Flag for successful insertion
         $insert = true;
-        $msg = "<p class='submitMsg'>Thanks for submitting your form. Customer Added</p>";
+        $msg = "<p class='submitMsg'>Thanks for submitting your form. Booking Completed.</p>";
     }
     else{
         echo "ERROR: $sql <br> $con->error";
