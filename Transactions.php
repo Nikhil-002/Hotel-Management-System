@@ -5,30 +5,20 @@ $username = "root";
 $password = "";
 $dbname = "hotel_management";
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-if(isset($_GET['cust_id'])){
-  
-
-  if ($conn->connect_error) {
+if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-  $cust_id = $_GET['cust_id'];
-  $sql = "SELECT * FROM `transactions` WHERE cust_id = '$cust_id';";
-  $result = $conn->query($sql);
 
-  if($conn->query($sql)){
-    $showTable = true;
-  }else{
-        echo "ERROR: $sql <br> $con->error";
-    }
+$cust_id = 0;
 
-
-  $conn->close();
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+  // $sql = "SELECT * FROM `transactions` WHERE cust_id =" . $_POST["cust_id"] . ";" ; 
+  $cust_id = $_POST['cust_id'];
+  $showTable = true;
 }
-
-  
-
-
+$sql = "SELECT * FROM `transactions`;" ; 
+$result = $conn->query($sql);
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -59,9 +49,9 @@ if(isset($_GET['cust_id'])){
       </ul>
     </nav>
     <div class="container">
-      <form action="Transactions.php" method="get">
+      <form action="Transactions.php" method="post">
         <h1><b>Show Reservation</b></h1>
-        <input id="cust_id" namee="cust_id" type="text" placeholder="Enter Customer-Id " />
+        <input id="cust_id" name="cust_id" type="text" placeholder="Enter Customer-Id " />
         <button class="btn">Submit</button>
       </form>
       <table>
@@ -72,9 +62,10 @@ if(isset($_GET['cust_id'])){
     <th>Amount Paid</th>
   </tr>
       <?php
-      if($showTable = true){
+      if($showTable == true){
        if($result->num_rows>0){
          while($row = $result->fetch_assoc() ){
+           if($row['cust_id'] == $cust_id)
           echo "<tr>" . "<td>".$row['trans_id']."<td>".$row['trans_type']."</td>" . "<td>".$row['tarns_date']."</td>" . "<td>".$row['trans_amount']."</td>" . "</tr>";
         }
       }else{
