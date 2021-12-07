@@ -19,6 +19,13 @@ textarea {
   margin: 11px 0px;
   padding: 7px;
 }
+body{
+  background-image: url("https://img.freepik.com/free-photo/hotel-tropical-summer-landscape-tree_1203-4847.jpg?size=626&ext=jpg");
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .navbar {
   background-color: rgb(172, 213, 231);
   text-align: left;
